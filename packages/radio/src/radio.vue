@@ -1,17 +1,17 @@
 <template>
   <label>
-    <!-- <input type="radio" name="value" id="label" :value="value" @input="changeValue(label)" />
-     -->
-    <input type="radio" name="vaule" v-model="model" :value="label"/>
+    <input type="radio" name="vaule" :model='model' :value="label"/>
     <span class="my-radio-border"></span>
     <slot>默认值</slot>
   </label>
 </template>
 <script>
 export default {
-  name: "RadioButton",
+  name: "radio",
   data() {
-    return {};
+    return {
+      model:''
+    };
   },
   props: {
     value: {
@@ -68,22 +68,6 @@ label .text {
   vertical-align: top;
   padding: 0 5px;
 }
-/* label input:checked + span {
-  content: "";
-  display: inline-block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  height: 10px;
-  width: 10px;
-  border-radius: 100%;
-  background: #409eff;
-  border-color: #409eff;
-  
-} */
 label input:checked + span::after {
   content: "";
   display: inline-block;

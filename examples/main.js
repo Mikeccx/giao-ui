@@ -3,15 +3,14 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import { RadioButton } from '../packages/index'
+import radio from '../packages/index'
 Vue.config.productionTip = false
-// Vue.component('RadioButton', RadioButton)
-Vue.use(RadioButton)
+Vue.component('radio', radio)
+Vue.use(radio)
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
-  components: { App },
-  template: '<App/>'
+  render: h=>h(App)
 })

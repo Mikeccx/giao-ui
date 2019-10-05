@@ -1,7 +1,7 @@
-import RadioButton from './src/radio.vue'
+import radio from './src/radio.vue'
 
-RadioButton.install = function (Vue) {
-  Vue.component(RadioButton.name, RadioButton)
+radio.install = function (Vue) {
+  Vue.component(radio.name, radio)
 }
 
-export default RadioButton
+export default radio

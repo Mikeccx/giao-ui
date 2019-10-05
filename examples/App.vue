@@ -1,16 +1,15 @@
 <template>
 <div>
-    <RadioButton v-model="value" label=2>GG</RadioButton>
-    <RadioButton v-model="value" label=1>MM</RadioButton>
+    <radio v-model="value" label=2>GG</radio>
+    <radio v-model="value" label=1>MM</radio>
 </div>
 </template>
 <script>
 export default {
+  name: 'App',
     data() {
       return {
-       value:1,
-       label1:'爸爸',
-       label2:'妈妈'
+       value:'1'
       }
     }
 }

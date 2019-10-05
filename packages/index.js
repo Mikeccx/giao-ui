@@ -1,7 +1,7 @@
-import RadioButton from './radio/src/radio'
+import radio from './radio'
 // 存储组件列表
 const components = [
-  RadioButton
+  radio
 ]
 // 定义install方法，接受vue做参数，使用use注册插件
 const install = function (Vue) {
@@ -16,7 +16,7 @@ const install = function (Vue) {
 if (typeof window !== 'undefined' && window.Vue) {
   install(window.Vue)
 }
-export {
+export default{
   install,
-  RadioButton
+  radio
 }
