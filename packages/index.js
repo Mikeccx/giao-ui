@@ -1,7 +1,11 @@
 import radio from './radio'
+import gdialog from './dialog'
+import gButton from './button'
 // 存储组件列表
 const components = [
-  radio
+  radio,
+  gdialog,
+  gButton
 ]
 // 定义install方法，接受vue做参数，使用use注册插件
 const install = function (Vue) {
@@ -18,5 +22,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 }
 export default{
   install,
-  radio
+  gdialog,
+  radio,
+  gButton
 }

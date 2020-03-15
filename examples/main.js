@@ -3,10 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import radio from '../packages/index'
+import giao from '../packages/index'
 Vue.config.productionTip = false
-Vue.component('radio', radio)
-Vue.use(radio)
+Vue.use(giao)
 
 /* eslint-disable no-new */
 new Vue({
